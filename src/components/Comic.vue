@@ -1,7 +1,6 @@
 <template>
   <div class="comic">
-    <div class="title">{{ title }}
-    <img v-on:click="fave" class="heart" src="/heart.png" v-bind:class="{ 'favoriteheart': favorite, 'fadedheart': !favorite}" /></div>
+    <div class="title">{{ title }}<img v-on:click="fave" class="heart" src="/heart.png" v-bind:class="{ 'favoriteheart': favorite, 'fadedheart': !favorite}" /></div>
     <div class="dateline">#{{ num }} &bull; {{ dateline }}</div>
     <img class="comic" :src="img"/>
     <div class="alt">{{ alt}}</div>
