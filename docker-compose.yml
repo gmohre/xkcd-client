@@ -1,0 +1,9 @@
+version: '3.1'
+services:
+  web-client:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    image: gmohre/xkcd-client:latest
+    ports:
+      - '8080:8080'
